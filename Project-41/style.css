@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #053a5f;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+  word-spacing: 5px;
+}
+
+.container {
+  width: 400px;
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 0 30px;
+  border: 1px solid #053a5f;
+  border-radius: 10px;
+  outline: none;
+}
+
+.inputContainer i {
+  font-size: 24px;
+  color: #053a5f;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.rangeContainer {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rangeContainer input {
+  width: 90%;
+  accent-color: #053a5f;
+  cursor: pointer;
+}
+
+/* For Firefox */
+.rangeContainer input::-moz-range-thumb {
+  border: 3px solid #053a5f;
+  outline: 4px solid #053a5f;
+  outline-offset: 3px;
+}
+
+.rangeContainer input::-moz-range-track {
+  height: 12px;
+  border-radius: 50px;
+  background: #053a5f;
+}
+
+/* For chrome, edge and safari */
+.rangeContainer input::-webkit-slider-thumb {
+  border: 3px solid #053a5f;
+  outline: 4px solid #053a5f;
+  outline-offset: 3px;
+}
+
+.rangeContainer span {
+  font-weight: 600;
+}
+
+.generateBtn {
+  font-size: 24px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #053a5f;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.generateBtn:active {
+  transform: scale(0.95);
+}
